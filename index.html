@@ -1,87 +1,72 @@
 <!DOCTYPE html><html>
 <head>
   <meta charset="UTF-8">
-  <title>Login to Continue</title>
+  <title>Login Prank</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #2e3a49;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://files.catbox.moe/tp3y73.jpeg') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
     .login-box {
-      background-color: #fff;
-      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
       border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      width: 400px;
-    }
-    .login-box img {
-      width: 120px;
-      margin-bottom: 25px;
+      width: 360px;
     }
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 14px;
-      margin: 12px 0;
+      padding: 12px;
+      margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 15px;
+      border-radius: 5px;
+      font-size: 14px;
     }
     .login-button {
+      width: 100%;
+      padding: 12px;
       background-color: #3c82f6;
       color: white;
       border: none;
-      padding: 14px;
-      width: 100%;
-      font-size: 15px;
-      border-radius: 6px;
+      border-radius: 5px;
+      font-size: 14px;
       cursor: pointer;
     }
     .login-button:hover {
       background-color: #2a64c4;
     }
-    .footer {
-      margin-top: 12px;
-      color: #999;
-      font-size: 13px;
-    }
     #prank-message {
+      margin-top: 15px;
       color: red;
       font-weight: bold;
-      margin-top: 22px;
-      font-size: 15px;
       display: none;
-    }
-    .copyright {
-      font-size: 13px;
-      color: #aaa;
-      margin-top: 18px;
     }
   </style>
 </head>
 <body>
   <div class="login-box">
     <h2>Login to Continue</h2>
-    <img src="https://cdn.jsdelivr.net/gh/bimxyzdev/panel-prank/assets/maskot.png" alt="Mascot">
     <form onsubmit="handleLogin(event)">
       <input type="text" placeholder="Username or Email" required><br>
       <input type="password" placeholder="Password" required><br>
       <button class="login-button" type="submit">LOGIN</button>
     </form>
-    <div class="footer">Forgot Password?</div>
-    <p id="prank-message">Selamat anda kena prank 😹😹</p>
-    <div class="copyright">© 2015 - 2025 Pterodactyl Software</div>
-  </div>  <script>
-    function handleLogin(e) {
-      e.preventDefault();
-      document.getElementById('prank-message').style.display = 'block';
+    <p id="prank-message">SI KONTOL YANG BERHARAP DAPET PANEL😹😹</p>
+  </div>
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      document.getElementById("prank-message").style.display = "block";
     }
-  </script></body>
+  </script>
+</body>
 </html>
