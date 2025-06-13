@@ -1,4 +1,5 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Login Prank</title>
@@ -9,31 +10,34 @@
       font-family: Arial, sans-serif;
       background: url('https://files.catbox.moe/tp3y73.jpeg') no-repeat center center fixed;
       background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
+      overflow: hidden;
     }
+
     .login-box {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      position: absolute;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background: transparent;
       text-align: center;
-      width: 360px;
     }
+
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
+      padding: 10px;
+      margin: 5px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 14px;
+      background-color: rgba(255, 255, 255, 0.8);
     }
+
     .login-button {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       background-color: #3c82f6;
       color: white;
       border: none;
@@ -41,11 +45,13 @@
       font-size: 14px;
       cursor: pointer;
     }
+
     .login-button:hover {
       background-color: #2a64c4;
     }
+
     #prank-message {
-      margin-top: 15px;
+      margin-top: 10px;
       color: red;
       font-weight: bold;
       display: none;
@@ -54,7 +60,6 @@
 </head>
 <body>
   <div class="login-box">
-    <h2>Login to Continue</h2>
     <form onsubmit="handleLogin(event)">
       <input type="text" placeholder="Username or Email" required><br>
       <input type="password" placeholder="Password" required><br>
@@ -62,6 +67,7 @@
     </form>
     <p id="prank-message">BERHARAP APA LU?😹😹</p>
   </div>
+
   <script>
     function handleLogin(event) {
       event.preventDefault();
